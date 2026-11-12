@@ -14,7 +14,7 @@ adresse.
 - Claude (claude.ai, application de bureau, Claude Code) : [guides/claude.md](guides/claude.md)
 - ChatGPT (connecteur seul, sans plugin) : [guides/chatgpt.md](guides/chatgpt.md)
 
-En bref, dans Claude : Personnaliser, Plugins, Ajouter, Ajouter une marketplace, puis `Juliuscrocus/koeliv-plugins`.
+En bref, dans Claude : Personnaliser, Plugins, Ajouter, Ajouter une marketplace, puis `koeliv-ecommerce/koeliv-plugins`.
 
 ## Mises à jour
 

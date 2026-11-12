@@ -8,7 +8,7 @@ Comptez 5 minutes. Il vous faut un abonnement Claude payant (Pro ou plus) et l'a
 1. Ouvrez [claude.ai](https://claude.ai) ou l'application Claude sur votre ordinateur.
 2. Dans la barre de gauche, ouvrez **Personnaliser** (Customize), puis **Plugins**.
 3. Cliquez sur **Ajouter** (Add), puis **Ajouter une marketplace** (Add marketplace).
-4. Collez `Juliuscrocus/koeliv-plugins` et validez.
+4. Collez `koeliv-ecommerce/koeliv-plugins` et validez.
 5. Sur la marketplace Koeliv, activez **Synchroniser automatiquement** (Sync automatically) : vous recevrez les
    nouvelles versions sans rien faire.
 
@@ -46,7 +46,7 @@ Pour l'équipe Koeliv ou les personnes qui utilisent Claude Code : un plugin ins
 arrive tout seul au démarrage suivant. Sinon :
 
 ```
-claude plugin marketplace add Juliuscrocus/koeliv-plugins
+claude plugin marketplace add koeliv-ecommerce/koeliv-plugins
 claude plugin install koeliv@koeliv
 ```
 
