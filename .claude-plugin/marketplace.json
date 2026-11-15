@@ -6,7 +6,7 @@
     {
       "name": "koeliv",
       "source": "./plugins/koeliv",
-      "description": "Les chiffres de votre boutique dans Claude : ventes, publicité, stock et site, avec la fiche de votre boutique."
+      "description": "Les chiffres de votre boutique dans Claude : ventes, publicité, stock et site, Search Console et Merchant Center."
     }
   ]
 }

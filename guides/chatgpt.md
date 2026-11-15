@@ -13,7 +13,7 @@ connecteur. Comptez 5 minutes. Il vous faut un abonnement ChatGPT payant qui don
 ## 2. Ajouter le connecteur Koeliv
 
 1. Toujours dans **Applications et connecteurs**, cliquez sur **Créer** (Create).
-2. Nom : `Koeliv`. Adresse du serveur MCP : `https://koeliv-mcp.koeliv.workers.dev/mcp`.
+2. Nom : `Koeliv`. Adresse du serveur MCP : `https://mcp.koeliv.fr/mcp`.
 3. Authentification : **OAuth**. Laissez vides les champs d'identifiant et de secret.
 4. Cochez la case de confiance, puis **Créer**.
 5. Une page Koeliv s'ouvre : saisissez votre adresse e-mail, puis le code reçu par e-mail.
@@ -21,7 +21,7 @@ connecteur. Comptez 5 minutes. Il vous faut un abonnement ChatGPT payant qui don
 ## 3. Essayer
 
 Dans une nouvelle conversation, cliquez sur **+**, puis **Plus**, **Mode développeur**, et choisissez Koeliv.
-Demandez : « Lis la fiche de ma boutique, puis donne-moi mes ventes de la semaine dernière. »
+Demandez : « Donne-moi mes ventes et mes clics Google de la semaine dernière. »
 
 Tous les outils Koeliv sont en lecture seule : ChatGPT ne vous demande pas de confirmation à chaque appel.
 

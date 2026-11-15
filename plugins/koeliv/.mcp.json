@@ -2,7 +2,7 @@
   "mcpServers": {
     "koeliv": {
       "type": "http",
-      "url": "https://koeliv-mcp.koeliv.workers.dev/mcp"
+      "url": "https://mcp.koeliv.fr/mcp"
     }
   }
 }

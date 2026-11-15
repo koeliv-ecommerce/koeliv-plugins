@@ -2,7 +2,7 @@
 
 Ce dépôt est le catalogue de plugins de [Koeliv](https://koeliv.com) pour Claude. Il contient un seul plugin,
 `koeliv`, qui met les chiffres d'une boutique suivie par Koeliv dans Claude : ventes Shopify, publicité Google,
-stock, site, lus avec la fiche de la boutique.
+stock, site, Search Console et Merchant Center, lus à l'instant.
 
 Le plugin est réservé aux clients de Koeliv. Il ne contient aucune donnée : il apporte une consigne courte (la
 skill `koeliv`) et l'adresse du connecteur Koeliv. Les données restent sur les serveurs de Koeliv et ne sont
@@ -21,7 +21,7 @@ En bref, dans Claude : Personnaliser, Plugins, Ajouter, Ajouter une marketplace,
 Le plugin ne porte pas de numéro de version : chaque modification publiée sur la branche `main` est une nouvelle
 version. Dans Claude, activez « Sync automatically » sur la marketplace pour la recevoir sans rien faire.
 
-Les outils, les consignes détaillées et les routines viennent du serveur Koeliv : ils changent pour tout le monde
+Les outils et les consignes détaillées viennent du serveur Koeliv : ils changent pour tout le monde
 dès que Koeliv les met à jour, sans nouvelle version du plugin.
 
 ## Contenu

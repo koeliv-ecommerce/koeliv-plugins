@@ -23,11 +23,8 @@ les outils apparaissent deux fois.
 
 ## 3. Essayer
 
-Ouvrez une nouvelle conversation et demandez : « Quelles ont été mes ventes la semaine dernière ? ». Claude lit la
-fiche de votre boutique, puis répond avec vos chiffres.
-
-Les routines de Koeliv sont dans le menu **+** de la conversation, sous Koeliv : « revue_hebdo_pub » le lundi,
-« point_stock » avant un réassort, « sante_site » chaque semaine, « point_mensuel » en début de mois.
+Ouvrez une nouvelle conversation et demandez : « Quelles ont été mes ventes la semaine dernière ? ». Claude répond
+avec les chiffres de votre boutique, lus à l'instant dans Shopify et Google.
 
 Sur téléphone, l'application Claude reprend le plugin et le connecteur de votre compte.
 
