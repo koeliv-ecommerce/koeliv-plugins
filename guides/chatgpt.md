@@ -23,7 +23,7 @@ connecteur. Comptez 5 minutes. Il vous faut un abonnement ChatGPT payant qui don
 Dans une nouvelle conversation, cliquez sur **+**, puis **Plus**, **Mode développeur**, et choisissez Koeliv.
 Demandez : « Donne-moi mes ventes et mes clics Google de la semaine dernière. »
 
-Tous les outils Koeliv sont en lecture seule : ChatGPT ne vous demande pas de confirmation à chaque appel.
+Certains outils Koeliv modifient vos comptes Google : ChatGPT vous demande une confirmation avant chacun d’eux.
 
 ## En cas de souci
 

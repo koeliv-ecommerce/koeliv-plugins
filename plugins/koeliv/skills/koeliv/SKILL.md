@@ -5,22 +5,45 @@ description: Travailler avec les données d'une boutique suivie par Koeliv. À u
 
 # Travailler avec Koeliv
 
-Le connecteur Koeliv lit à l'instant les comptes de la boutique : Shopify (`shopify_*`), Google Ads (`ads_*`),
-Google Analytics 4 (`ga4_*`), Search Console (`gsc_*`) et Merchant Center (`merchant_*`). Les comptes sont choisis
-par Koeliv d'après l'adresse e-mail connectée : la personne ne voit que sa boutique. Tout est en lecture seule.
+Le connecteur Koeliv lit et modifie les comptes de la boutique : Google Ads (`ads_*`), Google Analytics 4 (`ga4_*`),
+Search Console (`gsc_*`), Merchant Center (`merchant_*`), Shopify en lecture (`shopify_*`), et donne la fiche
+Koeliv de la boutique (`koeliv_*`). Les comptes sont choisis par Koeliv d'après l'adresse e-mail connectée : la
+personne ne voit que sa boutique.
 
-## Comment s'y prendre
+## En début de conversation
+
+1. Lisez `koeliv_fiche` : objectifs, saisons, règles, feuille de route et recommandations validés avec Koeliv.
+   `koeliv_contexte` détaille un sujet (saisons, seuils, google-ads…), `koeliv_memoire` donne les constats,
+   décisions et actions récents. Tenez-en compte dans toutes les réponses.
+2. Pour l'équipe Koeliv : chaque outil demande le client (argument `client`). Un client par conversation.
+
+## Lire
 
 - Répondez avec les outils plutôt que de mémoire, et donnez toujours la période des chiffres.
-- Un client par conversation. Pour l'équipe Koeliv, chaque outil demande le client (argument `client`).
-- Google Ads : avant une requête `ads_search`, vérifiez les champs avec `ads_get_resource_metadata` ; les montants
-  `cost_micros` sont en millionièmes de la devise.
-- GA4 : `ga4_run_report` pour le trafic et les ventes du site ; `ga4_get_custom_dimensions_and_metrics` pour les
-  noms de champs.
-- Shopify : `shopify_commandes`, `shopify_produits`, `shopify_clients`, et `shopify_shopifyql` pour les rapports
-  (ventes, sessions). Les moyens de paiement et les coordonnées bancaires ne sont jamais accessibles.
+- Google Ads : vérifiez les champs avec `ads_get_resource_metadata` avant `ads_search` ; `cost_micros` est en
+  millionièmes de la devise.
+- Shopify : si le connecteur Shopify officiel est branché, utilisez-le (il couvre tout, écriture comprise) ; sinon
+  `shopify_commandes`, `shopify_produits`, `shopify_clients`, `shopify_shopifyql`.
 - Croisez les sources quand la question le demande (ventes Shopify, trafic GA4, coût Ads), en signalant les écarts
   de définition plutôt que de les masquer.
+
+## Modifier
+
+Les outils d'écriture modifient vraiment les comptes : `ads_mutate`, `ads_create_asset`, `ads_manage_labels`,
+`ads_manage_label_associations`, `ga4_create_property_annotation`, `gsc_sitemap_envoyer`, `gsc_sitemap_retirer`,
+`merchant_create_data_source`, `merchant_fetch_data_source`.
+
+- Avant chaque modification : dites précisément ce qui va changer (avant, après) et attendez l'accord explicite de
+  la personne. Une seule modification à la fois.
+- `ads_mutate` : simulez d'abord (`validate_only` à vrai, le défaut), montrez le résultat, puis appliquez avec
+  `validate_only` à faux seulement après l'accord.
+- Après une modification, relisez la donnée pour confirmer qu'elle a bien changé.
+
+## Routines
+
+Dans le menu du connecteur : « revue_hebdo_pub » (le lundi), « point_stock » (avant un réassort), « sante_site »
+(chaque semaine), « point_mensuel » (début de mois). Si la personne demande l'un de ces points sans passer par le
+menu, suivez la même démarche.
 
 ## Si le connecteur ne répond pas
 
