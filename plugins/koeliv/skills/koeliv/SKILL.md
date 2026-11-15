@@ -32,14 +32,20 @@ personne ne voit que sa boutique.
 
 ## Modifier
 
-Les outils d'écriture modifient vraiment les comptes : `ads_mutate`, `ads_create_asset`, `ads_manage_labels`,
-`ads_manage_label_associations`, `ga4_create_property_annotation`, `gsc_sitemap_envoyer`, `gsc_sitemap_retirer`,
-`merchant_create_data_source`, `merchant_fetch_data_source`.
+Les outils d'écriture modifient vraiment les comptes :
+- Google Ads : `ads_campagne_statut` (pause, réactivation), `ads_budget_regler`, `ads_mots_cles_negatifs`, et
+  `ads_mutate` pour tout le reste ; `ads_create_asset`, `ads_manage_labels`, `ads_manage_label_associations`.
+- GA4 : `ga4_evenement_cle_creer` / `_supprimer` (conversions), `ga4_dimension_creer`, `ga4_metrique_creer`,
+  `ga4_personnalise_archiver`, `ga4_conservation_regler`, `ga4_create_property_annotation`.
+- Merchant Center : `merchant_produit_modifier`, `merchant_produit_ecrire`, `merchant_produit_retirer`,
+  `merchant_create_data_source`, `merchant_fetch_data_source`. Pour un produit venu de Shopify, la source principale
+  est réécrite par l'app Shopify : préférez une source supplémentaire, ou corrigez le produit dans Shopify.
+- Search Console : `gsc_sitemap_envoyer`, `gsc_sitemap_retirer`.
 
 - Avant chaque modification : dites précisément ce qui va changer (avant, après) et attendez l'accord explicite de
   la personne. Une seule modification à la fois.
-- `ads_mutate` : simulez d'abord (`validate_only` à vrai, le défaut), montrez le résultat, puis appliquez avec
-  `validate_only` à faux seulement après l'accord.
+- Google Ads : chaque outil simule d'abord (`validate_only` à vrai, le défaut) ; montrez le résultat, puis
+  appliquez avec `validate_only` à faux seulement après l'accord.
 - Après une modification, relisez la donnée pour confirmer qu'elle a bien changé.
 
 ## Routines
