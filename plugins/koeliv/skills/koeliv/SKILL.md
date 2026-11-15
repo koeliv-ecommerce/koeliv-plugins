@@ -5,9 +5,12 @@ description: Travailler avec les données d'une boutique suivie par Koeliv. À u
 
 # Travailler avec Koeliv
 
-Le connecteur Koeliv lit et modifie les comptes de la boutique : Google Ads (`ads_*`), Google Analytics 4 (`ga4_*`),
-Search Console (`gsc_*`), Merchant Center (`merchant_*`), Shopify en lecture (`shopify_*`), et donne la fiche
-Koeliv de la boutique (`koeliv_*`). Les comptes sont choisis par Koeliv d'après l'adresse e-mail connectée : la
+Deux connecteurs, chacun son rôle :
+- **Koeliv** lit et modifie les comptes Google de la boutique : Google Ads (`ads_*`), Google Analytics 4 (`ga4_*`),
+  Search Console (`gsc_*`), Merchant Center (`merchant_*`), et donne la fiche Koeliv de la boutique (`koeliv_*`).
+- **Shopify**, le connecteur officiel de Shopify, couvre toute la boutique : ventes, commandes, produits, stock,
+  clients, modifications comprises. Koeliv n'a aucun outil Shopify.
+ Les comptes sont choisis par Koeliv d'après l'adresse e-mail connectée : la
 personne ne voit que sa boutique.
 
 ## En début de conversation
@@ -22,9 +25,8 @@ personne ne voit que sa boutique.
 - Répondez avec les outils plutôt que de mémoire, et donnez toujours la période des chiffres.
 - Google Ads : vérifiez les champs avec `ads_get_resource_metadata` avant `ads_search` ; `cost_micros` est en
   millionièmes de la devise.
-- Shopify : le connecteur Shopify officiel, apporté par le plugin, couvre tout (écriture comprise) ; s'il n'est pas
-  connecté, proposez de le connecter (onglet Connecteurs du plugin) ; en attendant,
-  `shopify_commandes`, `shopify_produits`, `shopify_clients`, `shopify_shopifyql`.
+- Shopify : uniquement par le connecteur Shopify officiel ; s'il n'est pas connecté, dites-le et proposez de le
+  connecter (onglet Connecteurs du plugin Koeliv).
 - Croisez les sources quand la question le demande (ventes Shopify, trafic GA4, coût Ads), en signalant les écarts
   de définition plutôt que de les masquer.
 
