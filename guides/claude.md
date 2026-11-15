@@ -15,11 +15,14 @@ Comptez 5 minutes. Il vous faut un abonnement Claude payant (Pro ou plus) et l'a
 ## 2. Installer le plugin
 
 1. Dans la liste des plugins, choisissez **Koeliv**, puis **Ajouter** (Add).
-2. Ouvrez le plugin Koeliv, onglet **Connecteurs** (Connectors), et cliquez sur **Connecter** (Connect).
-3. Une page Koeliv s'ouvre : saisissez votre adresse e-mail, puis le code reçu par e-mail.
+2. Ouvrez le plugin Koeliv, onglet **Connecteurs** (Connectors). Il y en a deux :
+   - **koeliv** : cliquez sur **Connecter** (Connect). Une page Koeliv s'ouvre : saisissez votre adresse e-mail, puis
+     le code reçu par e-mail.
+   - **shopify** : cliquez sur **Connecter** et connectez-vous avec votre compte Shopify. C'est le connecteur
+     officiel de Shopify : il couvre toute la boutique, modifications comprises.
 
-Si vous aviez déjà ajouté un connecteur Koeliv à la main, retirez-le dans **Personnaliser**, **Connecteurs** : sinon
-les outils apparaissent deux fois.
+Si vous aviez déjà ajouté un connecteur Koeliv ou Shopify à la main, retirez-le dans **Personnaliser**,
+**Connecteurs** : sinon les outils apparaissent deux fois.
 
 ## 3. Essayer
 
@@ -28,9 +31,6 @@ avec les chiffres de votre boutique, lus à l'instant dans Shopify et Google.
 
 Les routines de Koeliv sont dans le menu **+** de la conversation, sous Koeliv : « revue_hebdo_pub » le lundi,
 « point_stock » avant un réassort, « sante_site » chaque semaine, « point_mensuel » en début de mois.
-
-Pour Shopify, ajoutez aussi le connecteur **Shopify** officiel (Personnaliser, Connecteurs) avec votre compte
-Shopify : il couvre toute la boutique, modifications comprises.
 
 Sur téléphone, l'application Claude reprend le plugin et le connecteur de votre compte.
 

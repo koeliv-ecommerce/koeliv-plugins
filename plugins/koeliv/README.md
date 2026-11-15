@@ -4,9 +4,10 @@ Les chiffres de votre boutique dans Claude : Shopify, Google Ads, Google Analyti
 Center, lus à l'instant. Demandez par exemple « mes ventes de la semaine dernière » ou « mes campagnes Google qui
 coûtent sans vendre ».
 
-Réservé aux clients de Koeliv. Après l'installation, connectez le connecteur Koeliv depuis l'onglet Connecteurs du
-plugin, avec l'adresse e-mail donnée à Koeliv : un code de connexion vous est envoyé par e-mail.
+Réservé aux clients de Koeliv. Le plugin apporte deux connecteurs, à connecter depuis son onglet Connecteurs :
+**Koeliv** (l'adresse e-mail donnée à Koeliv, puis le code reçu par e-mail) et **Shopify**, le connecteur officiel de
+Shopify (votre compte Shopify).
 
 Données : le connecteur lit et, avec votre accord à chaque fois, modifie vos comptes Google (Ads, Analytics, Search
 Console, Merchant Center). Koeliv ne stocke pas vos chiffres ; chaque appel est journalisé (outil, date, résultat).
-Pour Shopify, ajoutez aussi le connecteur Shopify officiel avec votre compte Shopify.
+Le connecteur Shopify est celui de Shopify : il couvre toute la boutique, modifications comprises.

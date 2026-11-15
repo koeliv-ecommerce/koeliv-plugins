@@ -3,6 +3,10 @@
     "koeliv": {
       "type": "http",
       "url": "https://mcp.koeliv.fr/mcp"
+    },
+    "shopify": {
+      "type": "http",
+      "url": "https://setup.shopify.com/mcp"
     }
   }
 }

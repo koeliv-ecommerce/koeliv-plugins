@@ -22,7 +22,8 @@ personne ne voit que sa boutique.
 - Répondez avec les outils plutôt que de mémoire, et donnez toujours la période des chiffres.
 - Google Ads : vérifiez les champs avec `ads_get_resource_metadata` avant `ads_search` ; `cost_micros` est en
   millionièmes de la devise.
-- Shopify : si le connecteur Shopify officiel est branché, utilisez-le (il couvre tout, écriture comprise) ; sinon
+- Shopify : le connecteur Shopify officiel, apporté par le plugin, couvre tout (écriture comprise) ; s'il n'est pas
+  connecté, proposez de le connecter (onglet Connecteurs du plugin) ; en attendant,
   `shopify_commandes`, `shopify_produits`, `shopify_clients`, `shopify_shopifyql`.
 - Croisez les sources quand la question le demande (ventes Shopify, trafic GA4, coût Ads), en signalant les écarts
   de définition plutôt que de les masquer.
