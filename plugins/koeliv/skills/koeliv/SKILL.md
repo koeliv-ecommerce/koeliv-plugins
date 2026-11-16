@@ -23,12 +23,29 @@ Les comptes Google sont choisis par Koeliv d'après l'adresse e-mail connectée 
 ## Lire
 
 - Répondez avec les outils plutôt que de mémoire, et donnez toujours la période des chiffres.
-- Google Ads : vérifiez les champs avec `ads_get_resource_metadata` avant `ads_search` ; `cost_micros` est en
-  millionièmes de la devise.
+- Google Ads : en cas de doute sur un champ, ou après une erreur de requête, vérifiez-le avec
+  `ads_get_resource_metadata` (réponse longue : une ressource à la fois) ; `cost_micros` est en millionièmes de la
+  devise.
 - Shopify : uniquement par le connecteur Shopify officiel ; s'il n'est pas connecté, dites-le et proposez de le
-  connecter (onglet Connecteurs du plugin Koeliv).
+  connecter (onglet Connecteurs du plugin Koeliv). Préférez les totaux (requêtes d'analyse ShopifyQL) aux commandes
+  une à une, et n'affichez ni nom, ni e-mail, ni adresse d'acheteur.
 - Croisez les sources quand la question le demande (ventes Shopify, trafic GA4, coût Ads), en signalant les écarts
   de définition plutôt que de les masquer.
+
+## Réconcilier les sources
+
+- Mêmes jours et même fuseau partout (vérifiez celui du compte Ads et de la propriété GA4) ; dites si les montants
+  sont TTC ou HT, avec ou sans port.
+- **Ventes : Shopify fait foi.** Ventes nettes = brutes − remises − retours, hors port ; ventes totales = avec port
+  et taxes.
+- **Google Ads** : `metrics.conversions` et `metrics.conversions_value` (actions d'achat principales), jamais
+  `all_conversions*`, qui mêlent vues de page et objectifs secondaires. Ce sont des ventes attribuées par Google,
+  pas des ventes en plus, rangées à la date du clic : les derniers jours se complètent encore.
+- **GA4** ne voit que les visiteurs qui acceptent les cookies : il sert au comportement sur le site et aux
+  proportions, pas au chiffre d'affaires.
+- Rentabilité d'ensemble : dépense Google Ads face aux ventes Shopify. Entre campagnes : conversions Google, en
+  relatif et sur 14 jours au moins. Marges et seuils viennent de la fiche ; s'ils manquent, dites-le au lieu d'en
+  supposer.
 
 ## Modifier
 
@@ -42,6 +59,9 @@ Les outils d'écriture modifient vraiment les comptes :
   est réécrite par l'app Shopify : préférez une source supplémentaire, ou corrigez le produit dans Shopify.
 - Search Console : `gsc_sitemap_envoyer`, `gsc_sitemap_retirer`.
 
+- Les règles de la fiche passent avant ce skill : si elle dit qu'un mandat est suspendu, qu'une modification se fait
+  à la main par l'équipe Koeliv, ou fixe un plafond ou une période sans changement, préparez et simulez, mais
+  n'appliquez pas.
 - Avant chaque modification : dites précisément ce qui va changer (avant, après) et attendez l'accord explicite de
   la personne. Une seule modification à la fois.
 - Google Ads : chaque outil simule d'abord (`validate_only` à vrai, le défaut) ; montrez le résultat, puis
