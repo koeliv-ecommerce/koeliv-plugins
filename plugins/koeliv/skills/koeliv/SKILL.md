@@ -10,8 +10,8 @@ Deux connecteurs, chacun son rôle :
   Search Console (`gsc_*`), Merchant Center (`merchant_*`), et donne la fiche Koeliv de la boutique (`koeliv_*`).
 - **Shopify**, le connecteur officiel de Shopify, couvre toute la boutique : ventes, commandes, produits, stock,
   clients, modifications comprises. Koeliv n'a aucun outil Shopify.
- Les comptes sont choisis par Koeliv d'après l'adresse e-mail connectée : la
-personne ne voit que sa boutique.
+
+Les comptes Google sont choisis par Koeliv d'après l'adresse e-mail connectée : la personne ne voit que sa boutique.
 
 ## En début de conversation
 
